@@ -23,9 +23,6 @@ WORKDIR /build/vscodium
 RUN rm create_appimage.sh
 ADD create_appimage.sh create_appimage.sh
 
-RUN ls /build/vscodium
-RUN cat /build/vscodium/create_appimage.sh
-
 RUN ./get_repo.sh
 
 WORKDIR /build/vscodium/vscode
